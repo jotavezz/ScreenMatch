@@ -1,4 +1,5 @@
 import br.com.alura.screenmatch.modelos.Filme;
+import br.com.alura.screenmatch.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -14,6 +15,13 @@ public class Principal {
         System.out.println("O total de avaliações é: " + primeiroFilme.getTotalDeAvaliacoes());
         System.out.println("A média das avaliações é: " + primeiroFilme.retornaMedia());
         System.out.println(primeiroFilme.retornaMedia());
+
+        Serie Lupin = new Serie();
+        Lupin.setNome("Lupin");
+        Lupin.setAnoDeLancamento(2021);
+        Lupin.exibeFichaTecnica();
+        Lupin.setTemporadas(3);
+        Lupin.setEpisodiosPorTemporada(10);
 
     }
 }
