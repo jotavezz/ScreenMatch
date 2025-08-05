@@ -15,6 +15,6 @@ private String diretor;
 
     @Override
     public int getClassificacao() {
-        return 0;
+        return (int) retornaMedia() / 2;
     }
 }
